@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookings - Find Your PG</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="light-mode">
+    <header>
+        <div class="container">
+            <h1>Find Your PG</h1>
+            <nav>
+                <a href="index.html" id="button">Home</a>
+                <a href="about.html" id="button">About</a>
+                <a href="owner-portal.html" id="button">List Your PG</a>
+                <a href="bookings.html" id="button" class="active">My Bookings</a>
+                <button id="login-btn">Login</button>
+                <button id="signup-btn">Signup</button>
+                <button id="theme-toggle" class="icon-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="bookings-section">
+            <h2>My PG Bookings</h2>
+            <p class="bookings-intro">
+                Below are the PGs you have booked. For any changes or cancellations, please contact us.
+            </p>
+
+            <div id="bookings-container" class="bookings-container">
+                <!-- Bookings will be populated here -->
+                <div class="loading">Loading your bookings...</div>
+            </div>
+
+            <div class="no-bookings" style="display: none;">
+                <p>You haven't booked any PGs yet.</p>
+                <a href="/" class="btn primary">Browse PGs</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Find Your PG. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="form-submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" required>
+                </div>
+                <button type="submit" class="form-submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="bookings.js"></script>
+</body>
+</html> 

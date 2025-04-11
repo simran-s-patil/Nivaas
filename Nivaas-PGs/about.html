@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Find Your PG</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="light-mode">
+    <header>
+        <div class="container">
+            <h1>Find Your PG</h1>
+            <nav>
+                <a href="index.html" id="button">Home</a>
+               
+                <a href="owner-portal.html" id="button">List Your PG</a>
+                <button id="login-btn">Login</button>
+                <button id="signup-btn">Signup</button>
+                <button id="theme-toggle" class="icon-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="about-section">
+            <h2>About Find Your PG</h2>
+            <p class="about-intro">
+                Find Your PG was founded in 2023 with a simple mission: to make finding the perfect PG accommodation
+                easier, safer, and more transparent for everyone. Our platform connects PG owners with tenants, 
+                helping people find their ideal home away from home.
+            </p>
+
+            <div class="team-section">
+                <h3>Meet Our Team</h3>
+                <div class="team-members">
+                    <div class="member-card">
+                      
+                        <h4>Simran Patil</h4>
+                        <p class="role">Founder & CEO</p>
+                        <p class="bio">
+                            With over 10 years of experience in real estate and technology, Simran founded Find Your PG after experiencing 
+                            her own struggles finding accommodations during her university years. She is passionate about creating 
+                            living spaces that feel like home.
+                        </p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="member-card">
+                        
+                        <h4>Priyansh Gupta</h4>
+                        <p class="role">CTO</p>
+                        <p class="bio">
+                            Priyansh leads our technology efforts, ensuring that our platform is secure, reliable, and easy to use. 
+                            With a background in computer science and data analytics, he has developed smart algorithms that help 
+                            match tenants with their ideal PG based on preferences and requirements.
+                        </p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="member-card">
+                        
+                        <h4>Haarshita Mahapatra</h4>
+                        <p class="role">Chief of Operations</p>
+                        <p class="bio">
+                            Haarshita ensures smooth operations between PG owners and tenants. Her background in hospitality 
+                            and customer service helps her understand the needs of both sides. She personally vets each PG 
+                            before it's listed on our platform, ensuring quality standards are maintained.
+                        </p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mission-section">
+                <h3>Our Mission</h3>
+                <p>
+                    We believe that finding a good place to live shouldn't be stressful or time-consuming. Our platform aims to:
+                </p>
+                <ul>
+                    <li>Provide transparent and accurate information about PG accommodations</li>
+                    <li>Connect tenants with verified and quality PG owners</li>
+                    <li>Streamline the PG hunting process with smart filters and search options</li>
+                    <li>Ensure safety and security for all users of our platform</li>
+                    <li>Create a community of responsible tenants and owners</li>
+                </ul>
+            </div>
+
+            <div class="contact-section">
+                <h3>Get in Touch</h3>
+                <p>
+                    Have questions or suggestions? We'd love to hear from you!
+                </p>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> contact@findyourpg.com</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Koramangala, Bangalore, India</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Find Your PG. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="form-submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" required>
+                </div>
+                <button type="submit" class="form-submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
